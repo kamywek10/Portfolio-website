@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Сайт портфолио</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="header_logo">визитка</h1>
+            <div class="header_menu menu">
+                <button class="menu_btn">
+                    <svg xmlns="http://www.w3.ord/2000/svg" width="16" height="16" fill="currrentColor" class="bi bi-list" veiwBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                </button>
+                <ul class="menu_list hide">
+                    <li class="menu_item">
+                        <a href="#info" class="menu_link">
+                            О себе
+                        </a>
+                    </li>
+                    <li class="menu_item">
+                        <a href="#portfolio" class="menu_link">
+                            Портфолио
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="info" id="info">
+            <h2 class="info_title">О себе</h2>
+            <p class="info_fullname">
+                Новикова Елена Владимировна
+            </p>
+            <p>
+                Мне 18 лет. Учусь в Московском техническом университете связи и информатики.
+            </p>
+            <h2 class="info_title">
+                Мои социальные сети
+            </h2>
+            <ul class="list">
+                <li><a href="https://t.me/kamywek10" class="info-nickname" target="_blank">
+                    Telegram
+                </a></li>
+                <li><a href="https://github.com/kamywek10" class="info-nickname" target="_blank">
+                    GitHub
+                </a></li>
+            </ul>
+        </div>
+        <div class="portfolio" id="portfolio">
+            <button class="portfolio_btn">
+                <span>Открыть портфолио</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </button>
+            <div class="portfolio_list hide">
+                <p>
+                    Работа с FastAPI
+                </p>
+                <img src="code.png" alt="Мой код" class="mycode"/>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
